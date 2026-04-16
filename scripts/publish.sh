@@ -15,6 +15,6 @@ rsync -av . "$PUBLIC_REPO_PATH" \
 
 # 3. Commit and Push the public repo
 cd "$PUBLIC_REPO_PATH"
-# git add .
+git add .
 git commit -m "Sync from private repo: $(date)"
 git push origin main
