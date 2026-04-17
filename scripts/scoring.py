@@ -51,7 +51,7 @@ def _iter_run_directories(out_dir: Path):
     for root, dirs, files in os.walk(out_dir):
         root_path = Path(root)
         #process only with '2026041' in path
-        if "2026041" not in str(root_path):
+        if "2026040"  in str(root_path): #skip old results
             continue
         # Do not traverse the excluded subtree.
         dirs[:] = [
